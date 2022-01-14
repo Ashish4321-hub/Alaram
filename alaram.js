@@ -1,17 +1,21 @@
 var dis = document.querySelector("h1");
+var hp = document.querySelector("input");
+
 function time(){
   var d = new Date();
   var s = d.getSeconds();
   var m = d.getMinutes();
   var h = d.getHours();
-  dis.innerText=(h + ":" + m + ":" + s);
-
+  var c = dis.innerText=(h + ":" + m + ":" + s);
+  if( hp.value == c){
+alert("alaram is ringing");
+ }
 }
 
 
-/*
- setInterval(time,1000);
 
+ setInterval(time,1000);
+/*
 window.onload = displayClock();
 function displayClock(){
   var display = new Date().toLocaleTimeString();
