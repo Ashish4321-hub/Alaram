@@ -8,7 +8,9 @@ function time(){
   var h = d.getHours();
   var c = dis.innerText=(h + ":" + m + ":" + s);
   if( hp.value == c){
-alert("alaram is ringing");
+ var audio = new Audio('alaram.mp3');
+  audio.play();
+   }
  }
 }
 
